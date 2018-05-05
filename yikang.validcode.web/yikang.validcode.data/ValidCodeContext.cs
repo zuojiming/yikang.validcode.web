@@ -12,7 +12,7 @@ namespace yikang.validcode.data
     {
         public ValidCodeContext():base("validcode")
         {
-                  
+                        
         }
         public DbSet<User> Users { get; set; }
     }
