@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27428.2037
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "yikang.validcode.web", "yikang.validcode.web\yikang.validcode.web.csproj", "{1E0DA7FC-8444-45A6-B8C8-7ADECFDEFC2A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "yikang.validcode.data", "yikang.validcode.data\yikang.validcode.data.csproj", "{0DBCD8CD-7166-41C2-874F-AA27E8455E31}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{1E0DA7FC-8444-45A6-B8C8-7ADECFDEFC2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1E0DA7FC-8444-45A6-B8C8-7ADECFDEFC2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1E0DA7FC-8444-45A6-B8C8-7ADECFDEFC2A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DBCD8CD-7166-41C2-874F-AA27E8455E31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DBCD8CD-7166-41C2-874F-AA27E8455E31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DBCD8CD-7166-41C2-874F-AA27E8455E31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DBCD8CD-7166-41C2-874F-AA27E8455E31}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
