@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Dashboard</title>
+        <!-- Mobile specific metas -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <!-- Force IE9 to render in normal mode -->
+        <!--[if IE]><meta http-equiv="x-ua-compatible" content="IE=9" /><![endif]-->
+        <meta name="author" content="SuggeElson" />
+        <meta name="description" content=""
+        />
+        <meta name="keywords" content=""
+        />
+        <meta name="application-name" content="sprFlat admin template" />
+        <!-- Import google fonts - Heading first/ text second -->
+        <link rel='stylesheet' type='text/css' 
+        <!--[if lt IE 9]>
+
+<![endif]-->
+        <!-- Css files -->
+        <!-- Icons -->
+        <link href="assets/css/icons.css" rel="stylesheet" />
+        <!-- jQueryUI -->
+        <link href="assets/css/sprflat-theme/jquery.ui.all.css" rel="stylesheet" />
+        <!-- Bootstrap stylesheets (included template modifications) -->
+        <link href="assets/css/bootstrap.css" rel="stylesheet" />
+        <!-- Plugins stylesheets (all plugin custom css) -->
+        <link href="assets/css/plugins.css" rel="stylesheet" />
+        <!-- Main stylesheets (template main css file) -->
+        <link href="assets/css/main.css" rel="stylesheet" />
+        <!-- Custom stylesheets ( Put your own changes here ) -->
+        <link href="assets/css/custom.css" rel="stylesheet" />
+        <!-- Fav and touch icons -->
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/img/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/img/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/img/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="assets/img/ico/apple-touch-icon-57-precomposed.png">
+        <link rel="icon" href="assets/img/ico/favicon.ico" type="image/png">
+        <!-- Windows8 touch icon ( http://www.buildmypinnedsite.com/ )-->
+        <meta name="msapplication-TileColor" content="#3399cc" />
+    </head>
+    <body>
+        <!-- Start #header -->
+        <div id="header">
+            <div class="container-fluid">
+                <div class="navbar">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="index.html">
+                            <i class="im-windows8 text-logo-element animated bounceIn"></i><span class="text-logo">spr</span><span class="text-slogan">flat</span> 
+                        </a>
+                    </div>
+                    <nav class="top-nav" role="navigation">
+                        <ul class="nav navbar-nav pull-left">
+                            <li id="toggle-sidebar-li">
+                                <a href="#" id="toggle-sidebar"><i class="en-arrow-left2"></i>
+                        </a>
+                            </li>
+                        <ul class="nav navbar-nav pull-right">
+                            
+                            <li class="dropdown">
+                                <a href="#" data-toggle="dropdown">
+                                    登录账号：SuggeElson</a>
+                                <ul class="dropdown-menu right" role="menu">
+                                    <li><a href="profile.html"><i class="st-user"></i> 修改资料</a>
+                                    </li>                                    
+                                    <li><a href="#"><i class="st-settings"></i> 修改密码</a>
+                                    </li>
+                                    <li><a href="login.html"><i class="im-exit"></i> 退出系统</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li id="toggle-right-sidebar-li"><a href="#">账户余额：<span>18564</span>元</a>
+                            </li>
+                             <li id="toggle-right-sidebar-li"><a href="#">单位名称：xxxxxx</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- Start #header-area -->
+                
+                <!-- End #header-area -->
+            </div>
+            <!-- Start .header-inner -->
+        </div>
+        <!-- End #header -->
+        <!-- Start #sidebar -->
+        <div id="sidebar">
+            <!-- Start .sidebar-inner -->
+            <div class="sidebar-inner">
+                <!-- Start #sideNav -->
+                <ul id="sideNav" class="nav nav-pills nav-stacked">
+                   
+                    <li><a href="#">普通用户管理 <i class="im-screen"></i></a>
+                    </li>
+                    <li><a href="#">等待处理充值 <i class="st-chart"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"> 业务记录查询 <i class="im-paragraph-justify"></i></a>
+                    </li>
+                    <li><a href="#"><i class="im-images"></i> 失败退款记录</a>
+                    </li>
+                    <li><a href="#">客户划账记录 <i class="st-files"></i></a>
+                    
+                    </li>
+                    <li><a href="#"> 电话导入 <i class="im-screen"></i></a>
+                    </li>
+                    <li><a href="#"> 公告 <i class="im-table2"></i></a>
+                    </li>
+                    
+                </ul>
+                <!-- End #sideNav -->
+            </div>
+            <!-- End .sidebar-inner -->
+        </div>
+        <!-- End #sidebar -->
+        <!-- Start #right-sidebar -->
+        
+        <!-- End #right-sidebar -->
+        <!-- Start #content -->
+        <div id="content">
+            <!-- Start .content-wrapper -->
+            <div class="content-wrapper">
+                <div class="row">
+                    <!-- Start .row -->
+                    <!-- Start .page-header -->
+                    <div class="col-lg-12 heading">
+                        <h1 class="page-header"><i class="im-screen"></i>导入号码</h1>
+                        <!-- Start .bredcrumb -->
+                        <ul class="breadcrumb">
+                        <li><a href="#" class="btn5">导入</a></li>
+                        <li><a href="#myModal" role="button" class="btn1" data-toggle="modal">添加</a></li>
+                        <li><a href="#myModal1" role="button" class="btn2" data-toggle="modal">修改</a></li>
+                        <li><a href="#myModal2" role="button" class="btn4" data-toggle="modal">删除</a></li>
+                        
+                        <li class="bread_li"><input type="text" class="breadcrum_text"></li>
+                        <li><input type="button" value="搜索" class="breadcrum_buttom"></li>
+                        </ul>
+                        <!-- End .breadcrumb -->
+                        <!-- Start .option-buttons -->
+                        
+                        <!-- End .option-buttons -->
+                    </div>
+                    <!-- End .page-header -->
+                </div>
+                <!-- End .row -->
+                <div class="outlet">
+                    <div id="page-wrapper">
+        <div class="graphs">
+     	<div class="zd">
+        
+	  <div class="biaoge">
+      <table>
+      <tr class="warning"><td  width="3%"><input type="checkbox" class="checkbox"  id="hxy"></td><td width="20%" >编号</td><td width="20%" >手机号码</td><td width="20%">地区</td><td width="20%">状态</td></tr>
+      <tr><td><input type="checkbox" class="checkbox" name="hxy"></td><td>1000</td><td>18556421242</td><td>安徽合肥</td><td>正常</td></tr>
+       <tr><td><input type="checkbox" class="checkbox" name="hxy"></td><td>1000</td><td>18556421242</td><td>安徽合肥</td><td>正常</td></tr>
+        <tr><td><input type="checkbox" class="checkbox" name="hxy"></td><td>1000</td><td>18556421242</td><td>安徽合肥</td><td>正常</td></tr>
+         <tr><td><input type="checkbox" class="checkbox" name="hxy"></td><td>1000</td><td>18556421242</td><td>安徽合肥</td><td>正常</td></tr> <tr><td><input type="checkbox" class="checkbox" name="hxy"></td><td>1000</td><td>18556421242</td><td>安徽合肥</td><td>正常</td></tr>
+          <tr><td><input type="checkbox" class="checkbox" name="hxy"></td><td>1000</td><td>18556421242</td><td>安徽合肥</td><td>正常</td></tr>
+           <tr><td><input type="checkbox" class="checkbox" name="hxy"></td><td>1000</td><td>18556421242</td><td>安徽合肥</td><td>正常</td></tr>
+            <tr><td><input type="checkbox" class="checkbox" name="hxy"></td><td>1000</td><td>18556421242</td><td>安徽合肥</td><td>正常</td></tr>
+             <tr><td><input type="checkbox" class="checkbox" name="hxy"></td><td>1000</td><td>18556421242</td><td>安徽合肥</td><td>正常</td></tr>
+              <tr><td><input type="checkbox" class="checkbox" name="hxy"></td><td>1000</td><td>18556421242</td><td>安徽合肥</td><td>正常</td></tr>
+               <tr><td><input type="checkbox" class="checkbox" name="hxy"></td><td>1000</td><td>18556421242</td><td>安徽合肥</td><td>正常</td></tr>
+         
+         
+       
+      </table>
+      <ul class="breadcrumb bread_ul">
+      <li>每页记录数：<select><option>20</option><option>30</option><option>50</option><option>100</option><option>200</option><option>300</option></select></li>
+      <li>记录总数：<i>3</i></li>
+      </ul>
+      
+      </div>
+    </div></div>
+                </div>
+                <!-- End .outlet -->
+            </div>
+            <!-- End .content-wrapper -->
+            <div class="clearfix"></div>
+        </div>
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                            <h4 class="modal-title">添加电话信息</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                        <p>注：前面带"<span>＊</span>"为必填项</p>
+                                         <ul>
+                                         <li><span>*</span><label>电话号码</label><input type="text"><div class="clear"></div></li>
+                                         <li><span>*</span><label>地区</label><input type="text"><div class="clear"></div></li>
+                                         <li><span>*</span><label>状态</label><select><option>正常</option><option>拉黑</option></select><div class="clear"></div></li>
+                                         
+                                         </ul>
+                                            
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                                            <button type="button" class="btn btn-primary">保存</button>
+                                        </div>
+                                    </div>
+                                    <!-- /.modal-content -->
+                                </div>
+                                <!-- /.modal-dialog -->
+                            </div>
+        <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                            <h4 class="modal-title">修改电话信息</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                       
+                                         <ul>
+                                         <li><span></span><label>电话号码</label><input type="text"><div class="clear"></div></li>
+                                         <li><span></span><label>地区</label><input type="text"><div class="clear"></div></li>
+                                         <li><span></span><label>状态</label><select><option>正常</option><option>拉黑</option></select><div class="clear"></div></li>
+                                         
+                                         </ul>
+                                            
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                                            <button type="button" class="btn btn-primary">保存</button>
+                                        </div>
+                                    </div>
+                                    <!-- /.modal-content -->
+                                </div>
+                                <!-- /.modal-dialog -->
+                            </div>
+                            
+        <!-- End #content -->
+        <!-- Javascripts -->
+        <!-- Load pace first -->
+        <script src="assets/plugins/core/pace/pace.min.js"></script>
+        <!-- Important javascript libs(put in all pages) -->
+        <script src="assets/js/jquery-1.8.3.min.js"></script>
+        <script>
+        window.jQuery || document.write('<script src="assets/js/libs/jquery-2.1.1.min.js">\x3C/script>')
+        </script>
+        <script src="assets/js/jquery-ui.js"></script>
+        <script>
+        window.jQuery || document.write('<script src="assets/js/libs/jquery-ui-1.10.4.min.js">\x3C/script>')
+        </script>
+        <!--[if lt IE 9]>
+  <script type="text/javascript" src="assets/js/libs/excanvas.min.js"></script>
+  <script type="text/javascript" src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <script type="text/javascript" src="assets/js/libs/respond.min.js"></script>
+<![endif]-->
+        <!-- Bootstrap plugins -->
+        <script src="assets/js/bootstrap/bootstrap.js"></script>
+        <!-- Core plugins ( not remove ever) -->
+        <!-- Handle responsive view functions -->
+        <script src="assets/js/jRespond.min.js"></script>
+        <!-- Custom scroll for sidebars,tables and etc. -->
+        <script src="assets/plugins/core/slimscroll/jquery.slimscroll.min.js"></script>
+        <script src="assets/plugins/core/slimscroll/jquery.slimscroll.horizontal.min.js"></script>
+        <!-- Resize text area in most pages -->
+        <script src="assets/plugins/forms/autosize/jquery.autosize.js"></script>
+        <!-- Proivde quick search for many widgets -->
+        <script src="assets/plugins/core/quicksearch/jquery.quicksearch.js"></script>
+        <!-- Bootbox confirm dialog for reset postion on panels -->
+        <script src="assets/plugins/ui/bootbox/bootbox.js"></script>
+        <!-- Other plugins ( load only nessesary plugins for every page) -->
+        
+        
+        <script>
+        $(document).ready(function(e) {
+$("#hxy").click(function(){
+if(this.checked){
+    $("[name=hxy]").prop("checked",true);}
+else{ $("[name=hxy]").prop("checked",false);}
+});
+
+$(".btn5").click(function(){
+	alert("确定要初始化密码吗？")
+	})
+});
+$(":button[value='全选']").click(function(){
+        $(":checkbox").is(":checked")?$(":checkbox").attr("checked",false):
+        $(":checkbox").attr("checked",true);
+    });
+
+
+        </script>
+    </body>
+</html>
