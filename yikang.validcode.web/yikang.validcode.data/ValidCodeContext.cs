@@ -14,6 +14,6 @@ namespace yikang.validcode.data
         {
                   
         }
-        public DbSet<User> Users { get; set; }
+        public DbSet<User> Users { get; set; }          
     }
 }
