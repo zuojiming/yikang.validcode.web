@@ -1,197 +1,351 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-<title>Home</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Modern Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
-Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
- <!-- Bootstrap Core CSS -->
-<link href="css/bootstrap.min.css" rel='stylesheet' type='text/css' />
-<!-- Custom CSS -->
-<link href="css/style.css" rel='stylesheet' type='text/css' />
-<!-- Graph CSS -->
-<link href="css/lines.css" rel='stylesheet' type='text/css' />
-<link href="css/font-awesome.css" rel="stylesheet"> 
-<!-- jQuery -->
-<script src="js/jquery.min.js"></script>  
-<!-- Nav CSS -->
-<link href="css/custom.css" rel="stylesheet">
-<!-- Metis Menu Plugin JavaScript -->
-<link rel="stylesheet" href="css/simpleAlert.css">
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Dashboard</title>
+        <!-- Mobile specific metas -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <!-- Force IE9 to render in normal mode -->
+        <!--[if IE]><meta http-equiv="x-ua-compatible" content="IE=9" /><![endif]-->
+        <meta name="author" content="SuggeElson" />
+        <meta name="description" content=""
+        />
+        <meta name="keywords" content=""
+        />
+        <meta name="application-name" content="sprFlat admin template" />
+        <!-- Import google fonts - Heading first/ text second -->
+        <link rel='stylesheet' type='text/css' 
+        <!--[if lt IE 9]>
 
-<script src="js/simpleAlert.js"></script>
-<script src="js/metisMenu.min.js"></script>
-<script src="js/custom.js"></script>
-<!-- Graph JavaScript -->
-<script src="js/d3.v3.js"></script>
-<script src="js/rickshaw.js"></script>
-
-</head>
-<body>
-<div id="wrapper">
-     <!-- Navigation -->
-        <nav class="top1 navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="index.html">验证码中心——个人中心</a>
-            </div>
-            <!-- /.navbar-header -->
-            <ul class="nav navbar-nav navbar-right">
-				<li class="dropdown">
-	        		
-	        		
-	      		</li>
-			    <li class="dropdown">
-	        		<a href="#" class="dropdown-toggle avatar" data-toggle="dropdown"><img src="images/1.png"></a>
-	        		<ul class="dropdown-menu">
-						
-						<li class="m_2"><a href="javascript:void(0)" class="click_pop"><i class="fa fa-wrench"></i> 修改密码</a></li>
-						<li class="m_2"><a href="#"><i class="fa fa-lock"></i> 退出</a></li>	
-	        		</ul>
-	      		</li>
-			</ul>
-			
-            <div class="navbar-default sidebar" role="navigation">
-                <div class="sidebar-nav navbar-collapse">
-                    <ul class="nav" id="side-menu">                    
-                        <li>
-                           <a href="#"><i class="fa fa-laptop nav_icon"></i>获取验证码</a></li>                    
-                         <li>
-                            <a href="#"><i class="fa fa-check-square-o nav_icon"></i>在线充值</a></li>
-                      <li>
-                            <a href="#"><i class="fa fa-indent nav_icon"></i>我的账单</a></li>   
-                    </ul>
+<![endif]-->
+        <!-- Css files -->
+        <!-- Icons -->
+        <link href="assets/css/icons.css" rel="stylesheet" />
+        <!-- jQueryUI -->
+        <link href="assets/css/sprflat-theme/jquery.ui.all.css" rel="stylesheet" />
+        <!-- Bootstrap stylesheets (included template modifications) -->
+        <link href="assets/css/bootstrap.css" rel="stylesheet" />
+        <!-- Plugins stylesheets (all plugin custom css) -->
+        <link href="assets/css/plugins.css" rel="stylesheet" />
+        <!-- Main stylesheets (template main css file) -->
+        <link href="assets/css/main.css" rel="stylesheet" />
+        <!-- Custom stylesheets ( Put your own changes here ) -->
+        <link href="assets/css/custom.css" rel="stylesheet" />
+        <!-- Fav and touch icons -->
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/img/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/img/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/img/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="assets/img/ico/apple-touch-icon-57-precomposed.png">
+        <link rel="icon" href="assets/img/ico/favicon.ico" type="image/png">
+        <!-- Windows8 touch icon ( http://www.buildmypinnedsite.com/ )-->
+        <meta name="msapplication-TileColor" content="#3399cc" />
+    </head>
+    <body>
+        <!-- Start #header -->
+        <div id="header">
+            <div class="container-fluid">
+                <div class="navbar">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="index.html">
+                            <i class="im-windows8 text-logo-element animated bounceIn"></i><span class="text-logo">spr</span><span class="text-slogan">flat</span> 
+                        </a>
+                    </div>
+                    <nav class="top-nav" role="navigation">
+                        <ul class="nav navbar-nav pull-left">
+                            <li id="toggle-sidebar-li">
+                                <a href="#" id="toggle-sidebar"><i class="en-arrow-left2"></i>
+                        </a>
+                            </li>
+                        <ul class="nav navbar-nav pull-right">
+                            
+                            <li class="dropdown">
+                                <a href="#" data-toggle="dropdown">
+                                    登录账号：SuggeElson</a>
+                                <ul class="dropdown-menu right" role="menu">
+                                    <li><a href="profile.html"><i class="st-user"></i> 修改资料</a>
+                                    </li>                                    
+                                    <li><a href="#"><i class="st-settings"></i> 修改密码</a>
+                                    </li>
+                                    <li><a href="login.html"><i class="im-exit"></i> 退出系统</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li id="toggle-right-sidebar-li"><a href="#">账户余额：<span>18564</span>元</a>
+                            </li>
+                             <li id="toggle-right-sidebar-li"><a href="#">单位名称：xxxxxx</a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
-                <!-- /.sidebar-collapse -->
+                <!-- Start #header-area -->
+                
+                <!-- End #header-area -->
             </div>
-            <!-- /.navbar-static-side -->
-        </nav>
-        <div id="page-wrapper">
-        <div class="graphs">
-     	<div class="zd"><a href="#">刷新</a><p>当前位置：首页 > 个人中心 > 获取验证码</p><div class="clear"></div></div>
-        <div class="xiangmu">
-        <ul>
-        <li><i>项目：</i><select><option>京东</option><option>全国</option></select></li>
-        <li><i>省份：</i><select><option></option></select></li>
-        <li><i>城市：</i><select><option></option></select></li>
-        <li><input type="button" value="获取验证码" id="btn" onclick="sendemail()" class="hqyzm"></li>
-        </ul>
+            <!-- Start .header-inner -->
         </div>
+        <!-- End #header -->
+        <!-- Start #sidebar -->
+        <div id="sidebar">
+            <!-- Start .sidebar-inner -->
+            <div class="sidebar-inner">
+                <!-- Start #sideNav -->
+               <ul id="sideNav" class="nav nav-pills nav-stacked">
+                   
+                    <li><a href="#">普通用户管理 <i class="im-screen"></i></a>
+                    </li>
+                    <li><a href="#">等待处理充值 <i class="st-chart"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"> 业务记录查询 <i class="im-paragraph-justify"></i></a>
+                    </li>
+                    <li><a href="#"><i class="im-images"></i> 失败退款记录</a>
+                    </li>
+                    <li><a href="#">客户划账记录 <i class="st-files"></i></a>
+                    
+                    </li>
+                    <li><a href="#"> 电话导入 <i class="im-screen"></i></a>
+                    </li>
+                    <li><a href="#"> 公告 <i class="im-table2"></i></a>
+                    </li>
+                    
+                </ul>
+                <!-- End #sideNav -->
+            </div>
+            <!-- End .sidebar-inner -->
+        </div>
+        <!-- End #sidebar -->
+        <!-- Start #right-sidebar -->
+        
+        <!-- End #right-sidebar -->
+        <!-- Start #content -->
+        <div id="content">
+            <!-- Start .content-wrapper -->
+            <div class="content-wrapper">
+                <div class="row">
+                    <!-- Start .row -->
+                    <!-- Start .page-header -->
+                    <div class="col-lg-12 heading">
+                        <h1 class="page-header"><i class="im-screen"></i>普通用户管理</h1>
+                        <!-- Start .bredcrumb -->
+                        <ul class="breadcrumb">
+                        <li><a href="#myModal" role="button" class="btn1" data-toggle="modal">添加</a></li>
+                        <li><a href="#myModal1" role="button" class="btn2" data-toggle="modal">修改</a></li>
+                        <li><a href="#myModal2" role="button" class="btn4" data-toggle="modal">划账</a></li>
+                        <li><a href="#" class="btn5">初始密码</a></li>
+                        <li><select><option>显示全部</option>
+                        <option>账户ID</option>
+                        <option>登录账号</option>
+                        <option>单位名称</option>
+                        <option>所属代理商</option>
+                        <option>所属代理商所有下级子代号</option>
+                        <option>所属客服</option>
+                        <option>联系人</option>
+                        <option>手机号码</option>
+                        <option>QQ号码</option>
+                        <option>状态</option>
+                        <option>余额></option>
+                        <option>余额<</option>
+                        <option>余额=</option>
+                        <option>余额>=</option>
+                        <option>余额<=</option>
+                        <option>总消费>=</option>
+                        <option>总消费<=</option>
+                        <option>vip<</option>
+                        <option>vip></option>
+                        <option>vip=</option>
+                        
+                        
+                        
+                        
+                        </select></li>
+                        <li class="bread_li"><input type="text" class="breadcrum_text"></li>
+                        <li><input type="button" value="搜索" class="breadcrum_buttom"></li>
+                        </ul>
+                        <!-- End .breadcrumb -->
+                        <!-- Start .option-buttons -->
+                        
+                        <!-- End .option-buttons -->
+                    </div>
+                    <!-- End .page-header -->
+                </div>
+                <!-- End .row -->
+                <div class="outlet">
+                    <div id="page-wrapper">
+        <div class="graphs">
+     	<div class="zd">
+        
 	  <div class="biaoge">
-      <div class="biaoge_ba"><span>剩余金额：<i>17452</i>元</span><input type="button" value="加入黑名单" id="onlyChoseAlert"><div class="clear"></div></div>
       <table>
-      <tr class="warning"><td  width="3%"><input type="checkbox" class="checkbox"  id="hxy"></td><td width="10%" >手机号码</td><td width="7%" >验证码</td><td>短信内容</td><td width="13%" >获取时间</td><td width="10%" >项目名称</td></tr>
-      <tr><td><input type="checkbox" class="checkbox" name="hxy"></td><td>18545696329</td><td>542364</td><td>你好你你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好好</td><td>2018.05.04 14:34</td><td>京东</td></tr>
-     <tr><td><input type="checkbox" class="checkbox" name="hxy"></td><td>18545696329</td><td>542364</td><td>你好你你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好好</td><td>2018.05.04 14:34</td><td>京东</td></tr>
-     <tr><td><input type="checkbox" class="checkbox" name="hxy"></td><td>18545696329</td><td>542364</td><td>你好你你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好好</td><td>2018.05.04 14:34</td><td>京东</td></tr>
-     <tr><td><input type="checkbox" class="checkbox" name="hxy"></td><td>18545696329</td><td>542364</td><td>你好你你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好好</td><td>2018.05.04 14:34</td><td>京东</td></tr>
-      <tr><td><input type="checkbox" class="checkbox" name="hxy"></td><td>18545696329</td><td>542364</td><td>你好你你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好好</td><td>2018.05.04 14:34</td><td>京东</td></tr>
-     <tr><td><input type="checkbox" class="checkbox" name="hxy"></td><td>18545696329</td><td>542364</td><td>你好你你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好好</td><td>2018.05.04 14:34</td><td>京东</td></tr>
-      <tr><td><input type="checkbox" class="checkbox" name="hxy"></td><td>18545696329</td><td>542364</td><td>你好你你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好好</td><td>2018.05.04 14:34</td><td>京东</td></tr>
-     <tr><td><input type="checkbox" class="checkbox" name="hxy"></td><td>18545696329</td><td>542364</td><td>你好你你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好好</td><td>2018.05.04 14:34</td><td>京东</td></tr>
-      <tr><td><input type="checkbox" class="checkbox" name="hxy"></td><td>18545696329</td><td>542364</td><td>你好你你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好好</td><td>2018.05.04 14:34</td><td>京东</td></tr>
-     <tr><td><input type="checkbox" class="checkbox" name="hxy"></td><td>18545696329</td><td>542364</td><td>你好你你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好好</td><td>2018.05.04 14:34</td><td>京东</td></tr>
+      <tr class="warning"><td  width="3%"><input type="checkbox" class="checkbox"  id="hxy"></td><td width="5%" >编号</td><td width="7%" >登录账号</td><td>单位名称</td><td width="10%" >联系人</td><td width="10%" >手机号码</td><td>余额</td><td>总消费</td><td>VIP</td><td>所属代理商</td><td>所属客服</td><td>状态</td></tr>
+       <tr><td><input type="checkbox" class="checkbox"  name="hxy"></td><td>3</td><td>FJS</td><td>代理平台</td><td>xxxx</td><td>14586595695</td><td>100</td><td>1000</td><td>zzxdsd</td><td>sdafsdgsd</td><td>fgf</td><td>正常</td></tr>
+       <tr><td><input type="checkbox" class="checkbox"  name="hxy"></td><td>3</td><td>FJS</td><td>代理平台</td><td>xxxx</td><td>14586595695</td><td>100</td><td>1000</td><td>zzxdsd</td><td>sdafsdgsd</td><td>fgf</td><td>正常</td></tr>
+       <tr><td><input type="checkbox" class="checkbox"  name="hxy"></td><td>3</td><td>FJS</td><td>代理平台</td><td>xxxx</td><td>14586595695</td><td>100</td><td>1000</td><td>zzxdsd</td><td>sdafsdgsd</td><td>fgf</td><td>正常</td></tr>
+       <tr><td><input type="checkbox" class="checkbox"  name="hxy"></td><td>3</td><td>FJS</td><td>代理平台</td><td>xxxx</td><td>14586595695</td><td>100</td><td>1000</td><td>zzxdsd</td><td>sdafsdgsd</td><td>fgf</td><td>正常</td></tr>
+       <tr><td><input type="checkbox" class="checkbox"  name="hxy"></td><td>3</td><td>FJS</td><td>代理平台</td><td>xxxx</td><td>14586595695</td><td>100</td><td>1000</td><td>zzxdsd</td><td>sdafsdgsd</td><td>fgf</td><td>正常</td></tr>
+       <tr><td><input type="checkbox" class="checkbox"  name="hxy"></td><td>3</td><td>FJS</td><td>代理平台</td><td>xxxx</td><td>14586595695</td><td>100</td><td>1000</td><td>zzxdsd</td><td>sdafsdgsd</td><td>fgf</td><td>正常</td></tr>
+       <tr><td><input type="checkbox" class="checkbox"  name="hxy"></td><td>3</td><td>FJS</td><td>代理平台</td><td>xxxx</td><td>14586595695</td><td>100</td><td>1000</td><td>zzxdsd</td><td>sdafsdgsd</td><td>fgf</td><td>正常</td></tr>
+       <tr><td><input type="checkbox" class="checkbox"  name="hxy"></td><td>3</td><td>FJS</td><td>代理平台</td><td>xxxx</td><td>14586595695</td><td>100</td><td>1000</td><td>zzxdsd</td><td>sdafsdgsd</td><td>fgf</td><td>正常</td></tr>
+       <tr><td><input type="checkbox" class="checkbox"  name="hxy"></td><td>3</td><td>FJS</td><td>代理平台</td><td>xxxx</td><td>14586595695</td><td>100</td><td>1000</td><td>zzxdsd</td><td>sdafsdgsd</td><td>fgf</td><td>正常</td></tr>
+       <tr><td><input type="checkbox" class="checkbox"  name="hxy"></td><td>3</td><td>FJS</td><td>代理平台</td><td>xxxx</td><td>14586595695</td><td>100</td><td>1000</td><td>zzxdsd</td><td>sdafsdgsd</td><td>fgf</td><td>正常</td></tr>
       </table>
-      <div class="col-md-6 page_1">
-    	<ul class="pagination pagination-lg">
-			<li><a href="#"><i class="fa fa-angle-left"></i></a></li>
-			<li class="active"><a href="#">1</a></li>
-			<li><a href="#">2</a></li>
-			<li><a href="#">3</a></li>
-			<li><a href="#">4</a></li>
-			<li><a href="#">5</a></li>
-			<li><a href="#"><i class="fa fa-angle-right"></i></a></li>
-	   </ul>
-    
-    </div>
+      <ul class="breadcrumb bread_ul">
+      <li>每页记录数：<select><option>20</option><option>30</option><option>50</option><option>100</option><option>200</option><option>300</option></select></li>
+      <li><input type="button" value="全部" id="all"></li>
+      <li><select><option>禁用</option><option>正常</option></select></li>
+      <li><input type="button" value="状态反转"></li>
+      <li><select><option>无</option><option>ke</option></select></li>
+      <li><input type="button" value="客服锁定"></li>
+      <li>记录总数：<i>3</i></li>
+      </ul>
       
       </div>
     </div></div>
-    <div class="bgPop"></div>
-<!--弹出框-->
-<div class="pop">
-    <div class="pop-top">
-        <h2>修改密码</h2>
-        <span class="pop-close">Ｘ</span>
-    </div>
-    <div class="pop-content">
-        <div class="pop-content-right">
-            <ul>
-            <li><label>原密码</label><input type="text"></li>
-            <li><label>新密码</label><input type="text"></li>
-            <li><label>新密码</label><input type="text"></li>
-            </ul>
+                </div>
+                <!-- End .outlet -->
+            </div>
+            <!-- End .content-wrapper -->
+            <div class="clearfix"></div>
         </div>
-    </div>
-    <div class="pop-foot">
-        <input type="button" value="确定" class="pop-ok pop-close">
-    </div>
-</div>
-<script>
-    $(document).ready(function () {
-        $('.pop-close').click(function () {
-            $('.bgPop,.pop').hide();
-        });
-        $('.click_pop').click(function () {
-            $('.bgPop,.pop').show();
-        });
-    })
-
-</script>
-    <!-- /#wrapper -->
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-    <script type="text/javascript"> 
-var countdown=60; 
-function sendemail(){
-    var obj = $("#btn");
-    settime(obj);
-    
-    }
-function settime(obj) { //发送验证码倒计时
-    if (countdown == 0) { 
-        obj.attr('disabled',false); 
-        //obj.removeattr("disabled"); 
-        obj.val("获取验证码");
-        countdown = 60; 
-        return;
-    } else { 
-        obj.attr('disabled',true);
-        obj.val("重新发送(" + countdown + ")");
-        countdown--; 
-    } 
-setTimeout(function() { 
-    settime(obj) }
-    ,1000) 
-}
-$(document).ready(function(e) {
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                            <h4 class="modal-title">添加用户账号信息</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                        <p>注：前面带"<span>＊</span>"为必填项，"登陆名称"不能小于3个字符</p>
+                                         <ul>
+                                         <li><span>*</span><label>登录名称</label><input type="text"><input type="button" value="检测" class="buttons"><div class="clear"></div></li>
+                                         <li><span>*</span><label>登录密码</label><input type="text"><div class="clear"></div></li>
+                                         <li><span>*</span><label>确认密码</label><input type="text"><div class="clear"></div></li>
+                                         <li><span>&nbsp;</span><label>单位名称</label><input type="text"><div class="clear"></div></li>
+                                         <li><span>&nbsp;</span><label>联系人</label><input type="text"><div class="clear"></div></li>
+                                         <li><span>&nbsp;</span><label>手机号码</label><input type="text"><div class="clear"></div></li>
+                                         <li><span>&nbsp;</span><label>联系电话</label><input type="text"><div class="clear"></div></li>
+                                         </ul>
+                                            
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                                            <button type="button" class="btn btn-primary">保存</button>
+                                        </div>
+                                    </div>
+                                    <!-- /.modal-content -->
+                                </div>
+                                <!-- /.modal-dialog -->
+                            </div>
+        <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                            <h4 class="modal-title">修改用户账号信息</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                        <p>注：前面带"<span>＊</span>"为必填项，"登陆名称"不能小于3个字符</p>
+                                         <ul>
+                                         <li><span>*</span><label>登录名称</label><input type="text"><input type="button" value="检测" class="buttons"><div class="clear"></div></li>
+                                        
+                                         <li><span>&nbsp;</span><label>单位名称</label><input type="text"><div class="clear"></div></li>
+                                         <li><span>&nbsp;</span><label>联系人</label><input type="text"><div class="clear"></div></li>
+                                         <li><span>&nbsp;</span><label>手机号码</label><input type="text"><div class="clear"></div></li>
+                                         <li><span>&nbsp;</span><label>联系电话</label><input type="text"><div class="clear"></div></li>
+                                         <li><span>&nbsp;</span><label>账号状态</label><select><option>正常</option><option>禁用</option></select><div class="clear"></div></li>
+                                         </ul>
+                                            
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                                            <button type="button" class="btn btn-primary">保存</button>
+                                        </div>
+                                    </div>
+                                    <!-- /.modal-content -->
+                                </div>
+                                <!-- /.modal-dialog -->
+                            </div>
+        <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                            <h4 class="modal-title">账号充值</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                        <p>操作：<span>laohuzdl</span>，现可用余额：<span>199993.2 </span></p>
+                                         <ul>
+                                         <li><span>>&nbsp;</span><label>充值账号</label><input type="text" disabled="disabled"><div class="clear"></div></li>
+                                        
+                                         <li><span>&nbsp;</span><label>单位名称</label><input type="text" disabled="disabled"><div class="clear"></div></li>
+                                         <li><span>&nbsp;</span><label>账号余额</label><input type="text" disabled="disabled"><div class="clear"></div></li>
+                                         <li><span>&nbsp;</span><label>充值余额</label><input type="text"><div class="clear"></div></li>
+                                         <li><span>&nbsp;</span><label>备注</label><textarea></textarea><div class="clear"></div></li>
+                                         
+                                         </ul>
+                                            
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                                            <button type="button" class="btn btn-primary">保存</button>
+                                        </div>
+                                    </div>
+                                    <!-- /.modal-content -->
+                                </div>
+                                <!-- /.modal-dialog -->
+                            </div>                    
+        <!-- End #content -->
+        <!-- Javascripts -->
+        <!-- Load pace first -->
+        <script src="assets/plugins/core/pace/pace.min.js"></script>
+        <!-- Important javascript libs(put in all pages) -->
+        <script src="assets/js/jquery-1.8.3.min.js"></script>
+        <script>
+        window.jQuery || document.write('<script src="assets/js/libs/jquery-2.1.1.min.js">\x3C/script>')
+        </script>
+        <script src="assets/js/jquery-ui.js"></script>
+        <script>
+        window.jQuery || document.write('<script src="assets/js/libs/jquery-ui-1.10.4.min.js">\x3C/script>')
+        </script>
+        <!--[if lt IE 9]>
+  <script type="text/javascript" src="assets/js/libs/excanvas.min.js"></script>
+  <script type="text/javascript" src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <script type="text/javascript" src="assets/js/libs/respond.min.js"></script>
+<![endif]-->
+        <!-- Bootstrap plugins -->
+        <script src="assets/js/bootstrap/bootstrap.js"></script>
+        <!-- Core plugins ( not remove ever) -->
+        <!-- Handle responsive view functions -->
+        <script src="assets/js/jRespond.min.js"></script>
+        <!-- Custom scroll for sidebars,tables and etc. -->
+        <script src="assets/plugins/core/slimscroll/jquery.slimscroll.min.js"></script>
+        <script src="assets/plugins/core/slimscroll/jquery.slimscroll.horizontal.min.js"></script>
+        <!-- Resize text area in most pages -->
+        <script src="assets/plugins/forms/autosize/jquery.autosize.js"></script>
+        <!-- Proivde quick search for many widgets -->
+        <script src="assets/plugins/core/quicksearch/jquery.quicksearch.js"></script>
+        <!-- Bootbox confirm dialog for reset postion on panels -->
+        <script src="assets/plugins/ui/bootbox/bootbox.js"></script>
+        <!-- Other plugins ( load only nessesary plugins for every page) -->
+        
+        
+        <script>
+        $(document).ready(function(e) {
 $("#hxy").click(function(){
 if(this.checked){
     $("[name=hxy]").prop("checked",true);}
 else{ $("[name=hxy]").prop("checked",false);}
 });
-});
-$(function () {
-		//单次单选弹框
-		$("#onlyChoseAlert").click(function () {
-			var onlyChoseAlert = simpleAlert({
-				"content":"请选择手机号码!",
-				"buttons":{
-					"确定":function () {
-						onlyChoseAlert.close();
-					}
-				}
-			})
-		})
-})
-</script>
 
-</body>
+$(".btn5").click(function(){
+	alert("确定要初始化密码吗？")
+	})
+});
+$(":button[value='全选']").click(function(){
+        $(":checkbox").is(":checked")?$(":checkbox").attr("checked",false):
+        $(":checkbox").attr("checked",true);
+    });
+
+
+        </script>
+    </body>
 </html>
