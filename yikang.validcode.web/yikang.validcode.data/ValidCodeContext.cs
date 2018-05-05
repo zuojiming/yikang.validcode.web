@@ -9,7 +9,7 @@ using yikang.validcode.data.co;
 namespace yikang.validcode.data
 {
     public class ValidCodeContext : DbContext
-    {
+    {   
         public ValidCodeContext():base("validcode")
         {
                         
