@@ -5,13 +5,13 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace yikang.validcode.data.Model.co
 {
 	/// <summary>
-	/// user:实体类(属性说明自动提取数据库字段的描述信息)
+	/// paymoney:实体类(属性说明自动提取数据库字段的描述信息)
 	/// </summary>
 	[Serializable]
-    [Table("T_User")]
-	public partial class user
+    [Table("T_PayMoney")]
+	public partial class PayMoney
 	{
-		public user()
+		public PayMoney()
 		{}
 		#region Model
 		private int _id;
@@ -23,22 +23,22 @@ namespace yikang.validcode.data.Model.co
 		private int? _updateuser;
 		private DateTime? _deletedtime;
 		private int? _deleteuser;
-		private string _loginname;
-		private string _nickname;
-		private string _pwd;
-		private int? _usertype;
-		private int? _userlevel;
-		private string _mobile;
-		private string _qq;
+		private string _userloginname;
+		private int? _userid;
 		private string _companyname;
-		private decimal? _balance;
-		private decimal? _totalpay;
-		private int? _status;
-		/// <summary>
-		/// auto_increment
-		/// </summary>
+		private decimal? _paytype;
+		private decimal? _price;
+		private string _note;
+		private int? _statue;
+		private string _orderno;
+		private string _filename;
+		private decimal? _currentmoney;
+		private decimal? _overmoney;
+        /// <summary>
+        /// auto_increment
+        /// </summary>
         [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-		public int Id
+        public int Id
 		{
 			set{ _id=value;}
 			get{return _id;}
@@ -110,58 +110,18 @@ namespace yikang.validcode.data.Model.co
 		/// <summary>
 		/// 
 		/// </summary>
-		public string LoginName
+		public string UserLoginName
 		{
-			set{ _loginname=value;}
-			get{return _loginname;}
+			set{ _userloginname=value;}
+			get{return _userloginname;}
 		}
 		/// <summary>
 		/// 
 		/// </summary>
-		public string NIckName
+		public int? UserId
 		{
-			set{ _nickname=value;}
-			get{return _nickname;}
-		}
-		/// <summary>
-		/// 
-		/// </summary>
-		public string Pwd
-		{
-			set{ _pwd=value;}
-			get{return _pwd;}
-		}
-		/// <summary>
-		/// 
-		/// </summary>
-		public int? UserType
-		{
-			set{ _usertype=value;}
-			get{return _usertype;}
-		}
-		/// <summary>
-		/// 
-		/// </summary>
-		public int? UserLevel
-		{
-			set{ _userlevel=value;}
-			get{return _userlevel;}
-		}
-		/// <summary>
-		/// 
-		/// </summary>
-		public string Mobile
-		{
-			set{ _mobile=value;}
-			get{return _mobile;}
-		}
-		/// <summary>
-		/// 
-		/// </summary>
-		public string QQ
-		{
-			set{ _qq=value;}
-			get{return _qq;}
+			set{ _userid=value;}
+			get{return _userid;}
 		}
 		/// <summary>
 		/// 
@@ -174,26 +134,66 @@ namespace yikang.validcode.data.Model.co
 		/// <summary>
 		/// 
 		/// </summary>
-		public decimal? Balance
+		public decimal? PayType
 		{
-			set{ _balance=value;}
-			get{return _balance;}
+			set{ _paytype=value;}
+			get{return _paytype;}
 		}
 		/// <summary>
 		/// 
 		/// </summary>
-		public decimal? TotalPay
+		public decimal? Price
 		{
-			set{ _totalpay=value;}
-			get{return _totalpay;}
+			set{ _price=value;}
+			get{return _price;}
 		}
 		/// <summary>
 		/// 
 		/// </summary>
-		public int? Status
+		public string Note
 		{
-			set{ _status=value;}
-			get{return _status;}
+			set{ _note=value;}
+			get{return _note;}
+		}
+		/// <summary>
+		/// 
+		/// </summary>
+		public int? Statue
+		{
+			set{ _statue=value;}
+			get{return _statue;}
+		}
+		/// <summary>
+		/// 
+		/// </summary>
+		public string OrderNo
+		{
+			set{ _orderno=value;}
+			get{return _orderno;}
+		}
+		/// <summary>
+		/// 
+		/// </summary>
+		public string FileName
+		{
+			set{ _filename=value;}
+			get{return _filename;}
+		}
+		/// <summary>
+		/// 
+		/// </summary>
+		public decimal? CurrentMoney
+		{
+			set{ _currentmoney=value;}
+			get{return _currentmoney;}
+		}
+		/// <summary>
+		/// 
+		/// </summary>
+		public decimal? OverMoney
+		{
+			set{ _overmoney=value;}
+			get{return _overmoney;}
 		}
 		#endregion Model
 

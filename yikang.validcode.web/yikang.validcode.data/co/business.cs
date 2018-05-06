@@ -5,13 +5,13 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace yikang.validcode.data.Model.co
 {
 	/// <summary>
-	/// user:实体类(属性说明自动提取数据库字段的描述信息)
+	/// business:实体类(属性说明自动提取数据库字段的描述信息)
 	/// </summary>
 	[Serializable]
-    [Table("T_User")]
-	public partial class user
+    [Table("t_business")]
+	public partial class Business
 	{
-		public user()
+		public Business()
 		{}
 		#region Model
 		private int _id;
@@ -23,22 +23,22 @@ namespace yikang.validcode.data.Model.co
 		private int? _updateuser;
 		private DateTime? _deletedtime;
 		private int? _deleteuser;
-		private string _loginname;
-		private string _nickname;
-		private string _pwd;
-		private int? _usertype;
-		private int? _userlevel;
-		private string _mobile;
-		private string _qq;
-		private string _companyname;
-		private decimal? _balance;
-		private decimal? _totalpay;
-		private int? _status;
-		/// <summary>
-		/// auto_increment
-		/// </summary>
+		private string _userid;
+		private string _telephoneid;
+		private string _content;
+		private string _sendport;
+		private int? _projectid;
+		private string _projectname;
+		private int? _cardbusid;
+		private decimal? _cardbusmoeny;
+		private decimal? _userprice;
+		private int? _busmode;
+		private string _validcode;
+        /// <summary>
+        /// auto_increment
+        /// </summary>
         [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-		public int Id
+        public int Id
 		{
 			set{ _id=value;}
 			get{return _id;}
@@ -110,90 +110,90 @@ namespace yikang.validcode.data.Model.co
 		/// <summary>
 		/// 
 		/// </summary>
-		public string LoginName
+		public string UserId
 		{
-			set{ _loginname=value;}
-			get{return _loginname;}
+			set{ _userid=value;}
+			get{return _userid;}
 		}
 		/// <summary>
 		/// 
 		/// </summary>
-		public string NIckName
+		public string TelephoneId
 		{
-			set{ _nickname=value;}
-			get{return _nickname;}
+			set{ _telephoneid=value;}
+			get{return _telephoneid;}
 		}
 		/// <summary>
 		/// 
 		/// </summary>
-		public string Pwd
+		public string Content
 		{
-			set{ _pwd=value;}
-			get{return _pwd;}
+			set{ _content=value;}
+			get{return _content;}
 		}
 		/// <summary>
 		/// 
 		/// </summary>
-		public int? UserType
+		public string SendPort
 		{
-			set{ _usertype=value;}
-			get{return _usertype;}
+			set{ _sendport=value;}
+			get{return _sendport;}
 		}
 		/// <summary>
 		/// 
 		/// </summary>
-		public int? UserLevel
+		public int? ProjectId
 		{
-			set{ _userlevel=value;}
-			get{return _userlevel;}
+			set{ _projectid=value;}
+			get{return _projectid;}
 		}
 		/// <summary>
 		/// 
 		/// </summary>
-		public string Mobile
+		public string ProjectName
 		{
-			set{ _mobile=value;}
-			get{return _mobile;}
+			set{ _projectname=value;}
+			get{return _projectname;}
 		}
 		/// <summary>
 		/// 
 		/// </summary>
-		public string QQ
+		public int? CardBusId
 		{
-			set{ _qq=value;}
-			get{return _qq;}
+			set{ _cardbusid=value;}
+			get{return _cardbusid;}
 		}
 		/// <summary>
 		/// 
 		/// </summary>
-		public string CompanyName
+		public decimal? CardBusMoeny
 		{
-			set{ _companyname=value;}
-			get{return _companyname;}
+			set{ _cardbusmoeny=value;}
+			get{return _cardbusmoeny;}
 		}
 		/// <summary>
 		/// 
 		/// </summary>
-		public decimal? Balance
+		public decimal? UserPrice
 		{
-			set{ _balance=value;}
-			get{return _balance;}
+			set{ _userprice=value;}
+			get{return _userprice;}
 		}
 		/// <summary>
 		/// 
 		/// </summary>
-		public decimal? TotalPay
+		public int? BusMode
 		{
-			set{ _totalpay=value;}
-			get{return _totalpay;}
+			set{ _busmode=value;}
+			get{return _busmode;}
 		}
 		/// <summary>
 		/// 
 		/// </summary>
-		public int? Status
+		public string ValidCode
 		{
-			set{ _status=value;}
-			get{return _status;}
+			set{ _validcode=value;}
+			get{return _validcode;}
 		}
 		#endregion Model
 

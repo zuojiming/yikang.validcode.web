@@ -5,13 +5,13 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace yikang.validcode.data.Model.co
 {
 	/// <summary>
-	/// user:实体类(属性说明自动提取数据库字段的描述信息)
+	/// telephone:实体类(属性说明自动提取数据库字段的描述信息)
 	/// </summary>
 	[Serializable]
-    [Table("T_User")]
-	public partial class user
-	{
-		public user()
+    [Table("t_telephone")]
+    public partial class Telephone
+    {
+		public Telephone()
 		{}
 		#region Model
 		private int _id;
@@ -23,22 +23,14 @@ namespace yikang.validcode.data.Model.co
 		private int? _updateuser;
 		private DateTime? _deletedtime;
 		private int? _deleteuser;
-		private string _loginname;
-		private string _nickname;
-		private string _pwd;
-		private int? _usertype;
-		private int? _userlevel;
-		private string _mobile;
-		private string _qq;
-		private string _companyname;
-		private decimal? _balance;
-		private decimal? _totalpay;
+		private string _phone;
 		private int? _status;
-		/// <summary>
-		/// auto_increment
-		/// </summary>
+		private string _areaname;
+        /// <summary>
+        /// auto_increment
+        /// </summary>
         [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-		public int Id
+        public int Id
 		{
 			set{ _id=value;}
 			get{return _id;}
@@ -110,82 +102,10 @@ namespace yikang.validcode.data.Model.co
 		/// <summary>
 		/// 
 		/// </summary>
-		public string LoginName
+		public string Phone
 		{
-			set{ _loginname=value;}
-			get{return _loginname;}
-		}
-		/// <summary>
-		/// 
-		/// </summary>
-		public string NIckName
-		{
-			set{ _nickname=value;}
-			get{return _nickname;}
-		}
-		/// <summary>
-		/// 
-		/// </summary>
-		public string Pwd
-		{
-			set{ _pwd=value;}
-			get{return _pwd;}
-		}
-		/// <summary>
-		/// 
-		/// </summary>
-		public int? UserType
-		{
-			set{ _usertype=value;}
-			get{return _usertype;}
-		}
-		/// <summary>
-		/// 
-		/// </summary>
-		public int? UserLevel
-		{
-			set{ _userlevel=value;}
-			get{return _userlevel;}
-		}
-		/// <summary>
-		/// 
-		/// </summary>
-		public string Mobile
-		{
-			set{ _mobile=value;}
-			get{return _mobile;}
-		}
-		/// <summary>
-		/// 
-		/// </summary>
-		public string QQ
-		{
-			set{ _qq=value;}
-			get{return _qq;}
-		}
-		/// <summary>
-		/// 
-		/// </summary>
-		public string CompanyName
-		{
-			set{ _companyname=value;}
-			get{return _companyname;}
-		}
-		/// <summary>
-		/// 
-		/// </summary>
-		public decimal? Balance
-		{
-			set{ _balance=value;}
-			get{return _balance;}
-		}
-		/// <summary>
-		/// 
-		/// </summary>
-		public decimal? TotalPay
-		{
-			set{ _totalpay=value;}
-			get{return _totalpay;}
+			set{ _phone=value;}
+			get{return _phone;}
 		}
 		/// <summary>
 		/// 
@@ -194,6 +114,14 @@ namespace yikang.validcode.data.Model.co
 		{
 			set{ _status=value;}
 			get{return _status;}
+		}
+		/// <summary>
+		/// 
+		/// </summary>
+		public string AreaName
+		{
+			set{ _areaname=value;}
+			get{return _areaname;}
 		}
 		#endregion Model
 

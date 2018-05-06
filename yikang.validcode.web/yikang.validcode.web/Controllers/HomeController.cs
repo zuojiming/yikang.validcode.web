@@ -11,7 +11,6 @@ namespace yikang.validcode.web.Controllers
         public ActionResult Index()
         {    
             ViewBag.Title = "Home Page";
-
             return View();
         }
     }
