@@ -9,9 +9,9 @@ namespace yikang.validcode.data.Model.co
 	/// </summary>
 	[Serializable]
     [Table("T_User")]
-	public partial class user
+	public partial class User
 	{
-		public user()
+		public User()
 		{}
 		#region Model
 		private int _id;

@@ -15,7 +15,8 @@ namespace yikang.validcode.admin.Controllers.apis
         [Route("login")]
         public HttpResponseMessage Login(string userName,string passWord) {
             ValidCodeContext context = new ValidCodeContext();
-            context.Users
+            //context.Users.Where();
+            return null;
         }
     }
 }
