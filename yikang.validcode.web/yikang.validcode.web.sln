@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "yikang.validcode.webservice
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "yikang.validcode.admin", "yikang.validcode.admin\yikang.validcode.admin.csproj", "{B0923358-D298-4D82-96E3-1D797A82FA32}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "yikang.validcode.core", "yikang.validcode.core\yikang.validcode.core.csproj", "{93602B85-FD99-4218-917D-8C7F1B32177E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{B0923358-D298-4D82-96E3-1D797A82FA32}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B0923358-D298-4D82-96E3-1D797A82FA32}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B0923358-D298-4D82-96E3-1D797A82FA32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93602B85-FD99-4218-917D-8C7F1B32177E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93602B85-FD99-4218-917D-8C7F1B32177E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93602B85-FD99-4218-917D-8C7F1B32177E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93602B85-FD99-4218-917D-8C7F1B32177E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

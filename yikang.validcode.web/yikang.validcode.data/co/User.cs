@@ -16,24 +16,24 @@ namespace yikang.validcode.data.Model.co
 		#region Model
 		private int _id;
 		private string _uid;
-		private int? _isenabled;
-		private DateTime? _createtime;
-		private int? _createuser;
-		private DateTime? _updatetime;
-		private int? _updateuser;
+		private int? _isenabled = 1;
+		private DateTime? _createtime = DateTime.Now;
+		private int? _createuser = 1;
+		private DateTime? _updatetime = DateTime.Now;
+		private int? _updateuser = 1;
 		private DateTime? _deletedtime;
 		private int? _deleteuser;
 		private string _loginname;
 		private string _nickname;
 		private string _pwd;
-		private int? _usertype;
+		private UserTypeEnum _usertype = UserTypeEnum.正常;
 		private int? _userlevel;
 		private string _mobile;
 		private string _qq;
 		private string _companyname;
 		private decimal? _balance;
 		private decimal? _totalpay;
-		private int? _status;
+		private UserStatusEnum _status  = UserStatusEnum.正常;
 		/// <summary>
 		/// auto_increment
 		/// </summary>
@@ -134,7 +134,7 @@ namespace yikang.validcode.data.Model.co
 		/// <summary>
 		/// 
 		/// </summary>
-		public int? UserType
+		public UserTypeEnum UserType
 		{
 			set{ _usertype=value;}
 			get{return _usertype;}
@@ -190,7 +190,7 @@ namespace yikang.validcode.data.Model.co
 		/// <summary>
 		/// 
 		/// </summary>
-		public int? Status
+		public UserStatusEnum Status
 		{
 			set{ _status=value;}
 			get{return _status;}
@@ -198,5 +198,18 @@ namespace yikang.validcode.data.Model.co
 		#endregion Model
 
 	}
+
+    public enum UserTypeEnum {
+        正常 = 0,
+        试用 = 50,
+        后台账户 = 70,
+        管理员 = 100
+    }
+
+    public enum UserStatusEnum
+    {
+        正常 = 0,
+        禁用 = -10
+    }
 }
 

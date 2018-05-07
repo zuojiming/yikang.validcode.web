@@ -141,9 +141,9 @@
                         <!-- Start .bredcrumb -->
                         <ul class="breadcrumb">
                             <li><a href="#myModal" role="button" class="btn1" data-toggle="modal">添加</a></li>
-                            <li><a href="#myModal1" role="button" class="btn2" data-toggle="modal" @click="bindedit">修改</a></li>
+                            <li><a href="#myModal1" role="button" class="btn2" data-toggle="modal">修改</a></li>
                             <li><a href="#myModal2" role="button" class="btn4" data-toggle="modal">划账</a></li>
-                            <li><a href="#" class="btn5" @click="initPwd">初始密码</a></li>
+                            <li><a href="#" class="btn5">初始密码</a></li>
                             <li>
                                 <select name="searchkey" v-model="searchkey">
                                     <!--<option>显示全部</option>
@@ -195,13 +195,13 @@
                                             <td width="10%">手机号码</td>
                                             <td>余额</td>
                                             <td>总消费</td>
-                                            <td>所属公司</td>
                                             <!--<td>VIP</td>
+                                            <td>所属代理商</td>
                                             <td>所属客服</td>
                                             <td>状态</td>-->
                                         </tr>
                                         <tr v-if="datalist" v-for="(item,idx) in datalist" :key="idx">
-                                            <td><input type="checkbox" class="checkbox" name="hxy" v-model="item.checked"></td>
+                                            <td><input type="checkbox" class="checkbox" name="hxy"></td>
                                             <td v-html="item.Id"></td>
                                             <td v-html="item.LoginName"></td>
                                             <td><!--代理平台--></td>
@@ -209,8 +209,8 @@
                                             <td>{{item.Mobile}}</td>
                                             <td>{{item.Blanace}}</td>
                                             <td>{{item.TotalPay || 0}}</td>
-                                            <td>{{item.CompanyName}}</td>
                                             <!--<td>zzxdsd</td>
+                                            <td>sdafsdgsd</td>
                                             <td>fgf</td>
                                             <td>正常</td>-->
                                         </tr>
@@ -259,16 +259,13 @@
                         <div class="modal-body">
                             <p>注：前面带"<span>＊</span>"为必填项，"登陆名称"不能小于3个字符</p>
                             <ul>
-                                <li>
-                                    <span>*</span><label>登录名称</label>
-                                    <input type="text" v-model="edituser.loginname"><input type="button" value="检测" class="buttons"><div class="clear"></div>
-                                </li>
-                                <li><span>*</span><label>登录密码</label><input type="text" v-model="edituser.pwd"><div class="clear"></div></li>
-                                <li><span>*</span><label>确认密码</label><input type="text" v-model="edituser.confirmpwd"><div class="clear"></div></li>
-                                <li><span>&nbsp;</span><label>单位名称</label><input type="text" v-model="edituser.companyname"><div class="clear"></div></li>
-                                <li><span>&nbsp;</span><label>联系人</label><input type="text" v-model="edituser.nickname"><div class="clear"></div></li>
-                                <li><span>&nbsp;</span><label>手机号码</label><input type="text" v-model="edituser.mobile"><div class="clear"></div></li>
-                                <!--<li><span>&nbsp;</span><label>联系电话</label><input type="text"><div class="clear"></div></li>-->
+                                <li><span>*</span><label>登录名称</label><input type="text"><input type="button" value="检测" class="buttons"><div class="clear"></div></li>
+                                <li><span>*</span><label>登录密码</label><input type="text"><div class="clear"></div></li>
+                                <li><span>*</span><label>确认密码</label><input type="text"><div class="clear"></div></li>
+                                <li><span>&nbsp;</span><label>单位名称</label><input type="text"><div class="clear"></div></li>
+                                <li><span>&nbsp;</span><label>联系人</label><input type="text"><div class="clear"></div></li>
+                                <li><span>&nbsp;</span><label>手机号码</label><input type="text"><div class="clear"></div></li>
+                                <li><span>&nbsp;</span><label>联系电话</label><input type="text"><div class="clear"></div></li>
                             </ul>
 
                         </div>
@@ -291,16 +288,13 @@
                         <div class="modal-body">
                             <p>注：前面带"<span>＊</span>"为必填项，"登陆名称"不能小于3个字符</p>
                             <ul>
-                                <li>
-                                    <span>*</span><label>登录名称</label>
-                                    <input type="text" v-model="edituser.loginname"><input type="button" disabled value="检测" class="buttons"><div class="clear"></div>
-                                </li>
-                                <li><span>*</span><label>登录密码</label><input type="text" v-model="edituser.pwd"><div class="clear"></div></li>
-                                <li><span>*</span><label>确认密码</label><input type="text" v-model="edituser.confirmpwd"><div class="clear"></div></li>
-                                <li><span>&nbsp;</span><label>单位名称</label><input type="text" v-model="edituser.companyname"><div class="clear"></div></li>
-                                <li><span>&nbsp;</span><label>联系人</label><input type="text" v-model="edituser.nickname"><div class="clear"></div></li>
-                                <li><span>&nbsp;</span><label>手机号码</label><input type="text" v-model="edituser.mobile"><div class="clear"></div></li>
-                                <li><span>&nbsp;</span><label>账号状态</label><select v-model="edituser.status"><option value="0">正常</option><option value="-10">禁用</option></select><div class="clear"></div></li>
+                                <li><span>*</span><label>登录名称</label><input type="text"><input type="button" value="检测" class="buttons"><div class="clear"></div></li>
+
+                                <li><span>&nbsp;</span><label>单位名称</label><input type="text"><div class="clear"></div></li>
+                                <li><span>&nbsp;</span><label>联系人</label><input type="text"><div class="clear"></div></li>
+                                <li><span>&nbsp;</span><label>手机号码</label><input type="text"><div class="clear"></div></li>
+                                <li><span>&nbsp;</span><label>联系电话</label><input type="text"><div class="clear"></div></li>
+                                <li><span>&nbsp;</span><label>账号状态</label><select><option>正常</option><option>禁用</option></select><div class="clear"></div></li>
                             </ul>
 
                         </div>
